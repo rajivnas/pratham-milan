@@ -105,6 +105,9 @@ footer .support a {
   margin-bottom: 0.5rem;
   color: var(--clr-text);
 }
+.about p {
+  font-size: 1.1rem;
+}
 .about a {
   color: coral;
 }
@@ -274,6 +277,9 @@ footer .support a {
   .about h2 {
     margin-top: 0;
     margin-bottom: 0.7rem;
+  }
+  .about p {
+    font-size: 1rem;
   }
   .about a {
     text-decoration: none;

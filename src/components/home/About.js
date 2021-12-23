@@ -12,7 +12,7 @@ export default function About() {
             <h2>
               A wedding destination <br /> of your dream
             </h2>
-            <p style={{ fontSize: "1.1rem" }}>
+            <p>
               Pratham Milon is one of the most renowned wedding venues in
               Howrah, located on Domjur - Amta road, making it most accessible
               and convenient for all...
