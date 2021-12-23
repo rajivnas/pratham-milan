@@ -104,18 +104,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Pratham Milan`,
-        short_name: `Pratham Milan`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `static/icon.png`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/`],
