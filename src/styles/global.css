@@ -65,7 +65,7 @@ html {
   display: none;
 }
 .navScroll .navbar-nav .nav-link {
-  color: var(--clr-text) !important;
+  color: #202124 !important;
 }
 
 /* footer  */
