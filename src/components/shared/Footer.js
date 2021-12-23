@@ -12,7 +12,7 @@ export default function Footer() {
               <Link to="/">
                 <img
                   src="./logo.png"
-                  width="100"
+                  width="125"
                   height="auto"
                   className="mt-2 mt-md-4"
                   alt="logo"

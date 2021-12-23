@@ -70,6 +70,7 @@ module.exports = {
           `car-rental`,
           `guidelines-page`,
           `privacy-page`,
+          `thanks-page`,
           `404-page`,
         ],
       },

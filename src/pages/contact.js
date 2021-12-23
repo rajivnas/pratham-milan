@@ -62,7 +62,7 @@ export default function contact({ data }) {
                 </Form.Group>
 
                 <Button variant="secondary" type="submit">
-                  Send Message!
+                  Send Message
                 </Button>
               </Form>
             </Col>
