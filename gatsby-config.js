@@ -106,8 +106,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `প্রথম মিলন`,
-        short_name: `প্রথম মিলন`,
+        name: `Pratham Milan`,
+        short_name: `Pratham Milan`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
