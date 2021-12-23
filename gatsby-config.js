@@ -103,11 +103,5 @@ module.exports = {
         showSpinner: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`],
-      },
-    },
   ],
 }
