@@ -6,6 +6,7 @@ import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
 import { Container } from "react-bootstrap"
+import Seo from "../components/shared/Seo"
 
 export default function gallery({ data }) {
   const backgroundImage = data.allStrapiGalleryPage.nodes[0]
@@ -22,6 +23,11 @@ export default function gallery({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Gallery"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
       <Background image={bgImage} title={backgroundImage.title} />
       <Breadcrumb name={backgroundImage.title} />
       <Container>

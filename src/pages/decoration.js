@@ -5,10 +5,10 @@ import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
 import { graphql } from "gatsby"
 import { Container } from "react-bootstrap"
+import Seo from "../components/shared/Seo"
 
 export default function decoration({ data }) {
   const backgroundImage = data.allStrapiDecorationPage.nodes[0]
-  // const decoration = data.allStrapiGalleries.nodes
 
   const pluginImage = getImage(
     backgroundImage.bg_image.localFile.childImageSharp
@@ -21,6 +21,12 @@ export default function decoration({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Decoration"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
+
       <Background image={bgImage} title={backgroundImage.title} />
       <Breadcrumb name={backgroundImage.title} />
 

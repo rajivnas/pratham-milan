@@ -6,6 +6,7 @@ import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
 import { Container } from "react-bootstrap"
 import ReactMarkdown from "react-markdown"
+import Seo from "../components/shared/Seo"
 
 export default function guidelines({ data }) {
   const guidelines = data.allStrapiGuidelinesPage.nodes[0]
@@ -19,6 +20,11 @@ export default function guidelines({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Guidelines"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
       <Background image={bgImage} title={guidelines.title} />
       <Breadcrumb name={guidelines.title} />
 

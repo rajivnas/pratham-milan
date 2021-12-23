@@ -6,6 +6,7 @@ import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
 import { Container } from "react-bootstrap"
 import ReactMarkdown from "react-markdown"
+import { Helmet } from "react-helmet"
 
 export default function privacy({ data }) {
   const privacy = data.allStrapiPrivacyPage.nodes[0]
@@ -19,6 +20,9 @@ export default function privacy({ data }) {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Privacy-Policy | Pratham Milon</title>
+      </Helmet>
       <Background image={bgImage} title={privacy.title} />
       <Breadcrumb name={privacy.title} />
 

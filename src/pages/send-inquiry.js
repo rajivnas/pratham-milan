@@ -5,6 +5,7 @@ import { getImage } from "gatsby-plugin-image"
 import Background from "../components/shared/Background"
 import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
+import Seo from "../components/shared/Seo"
 
 export default function sendInquiry({ data }) {
   const inquiry = data.allStrapiSendInquiry.nodes[0]
@@ -18,6 +19,11 @@ export default function sendInquiry({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Send Inquiry"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
       <Background image={bgImage} title={inquiry.title} />
       <Breadcrumb name={inquiry.title} />
       <Container>

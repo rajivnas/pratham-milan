@@ -5,6 +5,7 @@ import { getImage } from "gatsby-plugin-image"
 import Background from "../components/shared/Background"
 import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
+import Seo from "../components/shared/Seo"
 
 export default function Error({ data }) {
   const notFound = data.allStrapi404Page.nodes[0]
@@ -17,6 +18,8 @@ export default function Error({ data }) {
   ]
   return (
     <Layout>
+      <Seo title="404" description="This page does not exist.." />
+
       <Background image={bgImage} title={notFound.title} />
       <Breadcrumb name={notFound.title} />
       <Container>

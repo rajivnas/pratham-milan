@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap"
 import Layout from "../components/shared/Layout"
 import Breadcrumb from "../components/shared/Breadcrumb"
 import VideoTour from "../components/VideoTour"
+import Seo from "../components/shared/Seo"
 
 export default function about({ data }) {
   const about = data.allStrapiAboutPage.nodes[0]
@@ -19,6 +20,12 @@ export default function about({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="About"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
+
       <Background image={bgImage} title={about.title} />
       <Breadcrumb name={about.title} />
       <Container className="mb-5">

@@ -5,10 +5,10 @@ import Breadcrumb from "../components/shared/Breadcrumb"
 import { Container } from "react-bootstrap"
 import Layout from "../components/shared/Layout"
 import { graphql } from "gatsby"
+import Seo from "../components/shared/Seo"
 
 export default function carRental({ data }) {
   const backgroundImage = data.allStrapiCarRental.nodes[0]
-  // const decoration = data.allStrapiGalleries.nodes
 
   const pluginImage = getImage(
     backgroundImage.bg_image.localFile.childImageSharp
@@ -21,6 +21,11 @@ export default function carRental({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Car Rental"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
       <Background image={bgImage} title={backgroundImage.title} />
       <Breadcrumb name={backgroundImage.title} />
 

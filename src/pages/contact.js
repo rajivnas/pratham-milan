@@ -5,6 +5,7 @@ import Background from "../components/shared/Background"
 import { Col, Container, Form, Row, Button } from "react-bootstrap"
 import Layout from "../components/shared/Layout"
 import Breadcrumb from "../components/shared/Breadcrumb"
+import Seo from "../components/shared/Seo"
 
 export default function contact({ data }) {
   const contact = data.allStrapiContactPage.nodes[0]
@@ -18,6 +19,12 @@ export default function contact({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Contact"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
+
       <Background image={bgImage} title={contact.title} />
       <Breadcrumb name={contact.title} />
       <Container>

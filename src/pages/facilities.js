@@ -6,6 +6,7 @@ import Breadcrumb from "../components/shared/Breadcrumb"
 import Layout from "../components/shared/Layout"
 import { Container } from "react-bootstrap"
 import Facilities from "../components/Facilities"
+import Seo from "../components/shared/Seo"
 
 export default function facilities({ data }) {
   const facilities = data.allStrapiFacilityPage.nodes[0]
@@ -19,6 +20,11 @@ export default function facilities({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title="Facilities"
+        description=""
+        keywords="Pratham Milan Garden, Pratham Milan banquet hall"
+      />
       <Background image={bgImage} title={facilities.title} />
       <Breadcrumb name={facilities.title} />
       <Container>
