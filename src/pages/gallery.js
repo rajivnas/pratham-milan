@@ -9,12 +9,10 @@ import { Container } from "react-bootstrap"
 import Seo from "../components/shared/Seo"
 
 export default function gallery({ data }) {
-  const backgroundImage = data.allStrapiGalleryPage.nodes[0]
+  const galleryPage = data.allStrapiGalleryPage.nodes[0]
   const galleries = data.allStrapiGalleries.nodes
 
-  const pluginImage = getImage(
-    backgroundImage.bg_image.localFile.childImageSharp
-  )
+  const pluginImage = getImage(galleryPage.bg_image.localFile.childImageSharp)
 
   const bgImage = [
     `linear-gradient(rgba(233, 186, 186, 0.208), rgba(20, 20, 20, 0.479))`,
@@ -28,15 +26,13 @@ export default function gallery({ data }) {
         description=""
         keywords="Pratham Milan Garden, Pratham Milan banquet hall"
       />
-      <Background image={bgImage} title={backgroundImage.title} />
-      <Breadcrumb name={backgroundImage.title} />
+      <Background image={bgImage} title={galleryPage.title} />
+      <Breadcrumb name={galleryPage.title} />
       <Container>
         <div className="page-title">
-          <h2 className="display-6 fw-normal">{backgroundImage.headline}</h2>
+          <h2 className="display-6 fw-normal">{galleryPage.headline}</h2>
         </div>
-        <p className="page-description text-muted">
-          {backgroundImage.description}
-        </p>
+        <p className="page-description text-muted">{galleryPage.description}</p>
 
         <SimpleReactLightbox>
           <SRLWrapper>

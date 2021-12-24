@@ -9,11 +9,9 @@ import Seo from "../components/shared/Seo"
 import Cars from "../components/Cars"
 
 export default function carRental({ data }) {
-  const backgroundImage = data.allStrapiCarRental.nodes[0]
+  const carRental = data.allStrapiCarRental.nodes[0]
 
-  const pluginImage = getImage(
-    backgroundImage.bg_image.localFile.childImageSharp
-  )
+  const pluginImage = getImage(carRental.bg_image.localFile.childImageSharp)
 
   const bgImage = [
     `linear-gradient(rgba(233, 186, 186, 0.208), rgba(20, 20, 20, 0.479))`,
@@ -27,16 +25,14 @@ export default function carRental({ data }) {
         description=""
         keywords="Pratham Milan Garden, Pratham Milan banquet hall"
       />
-      <Background image={bgImage} title={backgroundImage.title} />
-      <Breadcrumb name={backgroundImage.title} />
+      <Background image={bgImage} title={carRental.title} />
+      <Breadcrumb name={carRental.title} />
 
       <Container>
         <div className="page-title">
-          <h2 className="display-6 fw-normal">{backgroundImage.headline}</h2>
+          <h2 className="display-6 fw-normal">{carRental.headline}</h2>
         </div>
-        <p className="page-description text-muted">
-          {backgroundImage.description}
-        </p>
+        <p className="page-description text-muted">{carRental.description}</p>
 
         <Cars />
       </Container>
