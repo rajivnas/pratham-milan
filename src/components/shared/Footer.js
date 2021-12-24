@@ -11,10 +11,10 @@ export default function Footer() {
             <div className="ms-0 ms-lg-4">
               <Link to="/">
                 <img
-                  src="./logo.png"
-                  width="125"
+                  src="/logo.png"
+                  width="100"
                   height="auto"
-                  className="mt-2 mt-md-4"
+                  className="logo mt-2 mt-md-4"
                   alt="logo"
                 />
               </Link>

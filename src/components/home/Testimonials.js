@@ -32,7 +32,7 @@ export default function Testimonials() {
               <Carousel.Item key={testimonial.node.id}>
                 <div className="testimonial">
                   <img
-                    src="./quote.png"
+                    src="/quote.png"
                     width="100"
                     height="auto"
                     className="quote-icon"
@@ -51,7 +51,7 @@ export default function Testimonials() {
         </Carousel>
         <small>
           <img
-            src="./google.png"
+            src="/google.png"
             width="20"
             height="auto"
             alt="Google"

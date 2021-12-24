@@ -44,14 +44,14 @@ export default function Header() {
             src="/logo.png"
             className="logo"
             alt="logo"
-            width="120"
+            width="100"
             height="auto"
           />
           <img
             src="/logo-white.png"
             className="logo-white"
             alt="logo"
-            width="120"
+            width="100"
             height="auto"
           />
         </Link>

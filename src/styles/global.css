@@ -46,7 +46,11 @@ html {
   background-color: rgba(0, 0, 0, 0.123) !important;
 }
 .navbar .navbar-brand .logo {
+  width: 7.5rem;
   display: none;
+}
+.navbar .navbar-brand .logo-white {
+  width: 7.5rem;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0 1.8rem !important;
@@ -69,6 +73,9 @@ html {
 }
 
 /* footer  */
+footer .logo {
+  width: 7.5rem;
+}
 footer h4 {
   padding-left: 2rem;
 }
