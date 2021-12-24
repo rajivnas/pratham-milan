@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap"
 import Layout from "../components/shared/Layout"
 import { graphql } from "gatsby"
 import Seo from "../components/shared/Seo"
+import Cars from "../components/Cars"
 
 export default function carRental({ data }) {
   const backgroundImage = data.allStrapiCarRental.nodes[0]
@@ -36,6 +37,8 @@ export default function carRental({ data }) {
         <p className="page-description text-muted">
           {backgroundImage.description}
         </p>
+
+        <Cars />
       </Container>
     </Layout>
   )

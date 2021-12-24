@@ -227,6 +227,23 @@ footer .support a {
   width: 100%;
 }
 
+/* cars  */
+.cars .cars-list {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+.cars .car-img {
+  width: 100%;
+  height: auto;
+}
+.cars .car-name {
+  color: var(--clr-text);
+}
+.cars ul {
+  padding-left: 0 !important;
+  list-style-type: none;
+}
+
 /* content markdown */
 .content ol {
   padding-left: 1rem;
@@ -308,5 +325,10 @@ footer .support a {
   }
   .gallary {
     column-width: 150px;
+  }
+  .cars .cars-list {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 20%);
   }
 }

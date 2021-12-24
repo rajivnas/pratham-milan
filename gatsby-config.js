@@ -52,6 +52,7 @@ module.exports = {
         apiURL: process.env.STRAPI_URL,
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [
+          `cars`,
           `sliders`,
           `services`,
           `Achievements`,

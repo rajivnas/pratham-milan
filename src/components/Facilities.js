@@ -31,7 +31,7 @@ export default function Facilities() {
   const facilities = data.allStrapiFacilities.edges
 
   return (
-    <div className="facilities  pt-2 pt-md-3 pb-5">
+    <div className="facilities pt-2 pt-md-3 pb-5">
       {facilities.map((facility, i) => {
         return (
           <Row className="mb-4" key={i}>
