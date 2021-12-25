@@ -52,7 +52,7 @@ export default function Testimonials() {
         <small>
           <img
             src="/google.png"
-            width="20"
+            width="18"
             height="auto"
             alt="Google"
             className="pb-2"

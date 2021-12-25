@@ -17,9 +17,9 @@ export default function VideoTour() {
   const link = data.allStrapiAboutPage.edges[0]
 
   return (
-    <div className="py-md-4 mb-3">
-      <div className="text-start text-md-center mb-3">
-        <h3 style={{ color: "#6a6b6d" }}>Take a video tour</h3>
+    <div className="mb-5">
+      <div className="mb-3 text-start text-md-center">
+        <h3 style={{ color: "#6a6b6d" }}>Take a short video tour</h3>
       </div>
 
       <div className="video-tour ratio ratio-16x9">

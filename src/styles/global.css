@@ -28,7 +28,6 @@ html {
   font-size: 1.145rem;
   line-height: 1.6rem;
 }
-
 .btn {
   margin: 0 0.2rem;
   padding: 0.5rem 0.8rem !important;
@@ -36,6 +35,15 @@ html {
 }
 .btn:focus {
   box-shadow: none !important;
+}
+
+/* Common styles  */
+.default-background {
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 90%, 0 100%);
 }
 
 /* navbar  */
@@ -94,8 +102,8 @@ footer .support p {
 footer .support a {
   text-decoration: none;
 }
-/**************************************
-*********** Home Page *********************
+
+/****************** Home Page *********************
 *******************************************/
 /* hero carousel */
 .carousel-item .hero-slider {
@@ -181,20 +189,12 @@ footer .support a {
   letter-spacing: 1px;
 }
 
-/**************************************
-*********** Others Page *********************
+/********************** Others Page *********************
 *******************************************/
-/* Common styles  */
-.default-background {
-  min-height: 55vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 90%, 0 100%);
-}
 /* video-tour  */
 .video-tour {
-  max-width: 768px;
+  max-width: 850px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -207,13 +207,13 @@ footer .support a {
   margin-bottom: 5px;
   display: inline-block;
 }
-
 .gallary > div img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
+
 /* facilities */
 .fac-img,
 .fac-info {
@@ -251,8 +251,18 @@ footer .support a {
 .content p {
   font-size: 1.1rem;
 }
+.content img {
+  width: 100%;
+  height: auto;
+}
 
 @media (max-width: 992px) {
+  /* Common styles  */
+  .default-background {
+    min-height: 45vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 90%, 0 92%);
+  }
+
   /* navbar  */
   .navbar-light .navbar-nav-scroll {
     max-height: 250px !important;
@@ -283,10 +293,8 @@ footer .support a {
     padding-left: 0;
   }
 
-  /**************************************
-*********** Home Page *********************
+  /*************** Home Page *********************
 *******************************************/
-
   /* hero slider */
   .carousel-item .carousel-caption {
     left: 5%;
@@ -315,17 +323,14 @@ footer .support a {
     margin-right: 0;
     margin-bottom: -1.2rem;
   }
-  /**************************************
-*********** Others Page *********************
+  /***************** Others Page *********************
 *******************************************/
-  /* Common styles  */
-  .default-background {
-    min-height: 45vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 90%, 0 92%);
-  }
+  /* gallary */
   .gallary {
     column-width: 150px;
   }
+
+  /* cars  */
   .cars .cars-list {
     padding: 0.5rem;
     background-color: #ffffff;

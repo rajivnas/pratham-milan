@@ -5,6 +5,7 @@ import Background from "../components/shared/Background"
 import { Container } from "react-bootstrap"
 import Layout from "../components/shared/Layout"
 import Breadcrumb from "../components/shared/Breadcrumb"
+import ReactMarkdown from "react-markdown"
 import VideoTour from "../components/VideoTour"
 import Seo from "../components/shared/Seo"
 
@@ -28,23 +29,17 @@ export default function about({ data }) {
 
       <Background image={bgImage} title={about.title} />
       <Breadcrumb name={about.title} />
-      <Container className="mb-5">
+      <Container>
         <div className="page-title">
           <h2 className="display-6 fw-normal">{about.headline}</h2>
         </div>
-        <p className="page-description text-muted">{about.description}</p>
 
-        <div className="page-sub-title">
-          <h4>Brief history of our journey</h4>
-          <p className="text-muted">{about.brief_history}</p>
-        </div>
+        <ReactMarkdown
+          className="content text-muted mb-4"
+          children={about.body}
+        />
 
         <VideoTour />
-
-        <div className="page-sub-title">
-          <h4>Location and connectivity</h4>
-          <p className="text-muted">{about.location_connectivity}</p>
-        </div>
       </Container>
     </Layout>
   )
@@ -56,9 +51,7 @@ export const query = graphql`
       nodes {
         title
         headline
-        description
-        brief_history
-        location_connectivity
+        body
         bg_image {
           localFile {
             childImageSharp {

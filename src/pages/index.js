@@ -3,7 +3,7 @@ import About from "../components/home/About"
 import Achievement from "../components/home/Achievement"
 import Hero from "../components/home/Hero"
 import Services from "../components/home/Services"
-import Testimonials from "../components/home/Testimonials"
+import Testimonials from "../components/shared/Testimonials"
 import Layout from "../components/shared/Layout"
 import Seo from "../components/shared/Seo"
 
