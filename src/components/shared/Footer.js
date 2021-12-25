@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import { BsFacebook, BsInstagram, BsYoutube, BsWhatsapp } from "react-icons/bs"
 import { Col, Container, Row } from "react-bootstrap"
 
 export default function Footer() {
@@ -18,9 +19,42 @@ export default function Footer() {
                   alt="logo"
                 />
               </Link>
-              <p className="mb-4 mt-1 text-muted">
-                One of the best banquet halls in Domjur, Howrah
-              </p>
+              <p className="mt-1 text-muted">The best banquet hall in Howrah</p>
+
+              <div className="social-icons mb-4 ">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="Facebook"
+                  rel="noreferrer"
+                >
+                  <BsFacebook size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noreferrer"
+                >
+                  <BsInstagram size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="Youtube"
+                  rel="noreferrer"
+                >
+                  <BsYoutube size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  aria-label="Whatsapp"
+                  rel="noreferrer"
+                >
+                  <BsWhatsapp size={20} />
+                </a>
+              </div>
             </div>
           </Col>
           <Col lg={3}>

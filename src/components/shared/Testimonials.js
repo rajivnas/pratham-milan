@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import { FaQuoteLeft } from "react-icons/fa"
 import { Carousel, Container } from "react-bootstrap"
 
 export default function Testimonials() {
@@ -21,7 +22,7 @@ export default function Testimonials() {
 
   return (
     <section className="testimonials py-4 py-md-5">
-      <Container className="bg-light pt-5">
+      <Container className="pt-5">
         <div className="section-title">
           <h2>Testimonials</h2>
         </div>
@@ -31,15 +32,9 @@ export default function Testimonials() {
             return (
               <Carousel.Item key={testimonial.node.id}>
                 <div className="testimonial">
-                  <img
-                    src="/quote.png"
-                    width="100"
-                    height="auto"
-                    className="quote-icon"
-                    alt="Quote"
-                  />
+                  <FaQuoteLeft size={24} />
                   <h3 className="fs-5 mb-5">
-                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;{testimonial.node.review}
+                    &nbsp; &nbsp; &nbsp;{testimonial.node.review}
                   </h3>
                   <p className="text-end fst-italic fw-normal">
                     - {testimonial.node.name}
@@ -50,14 +45,21 @@ export default function Testimonials() {
           })}
         </Carousel>
         <small>
-          <img
-            src="/google.png"
-            width="18"
-            height="auto"
-            alt="Google"
-            className="pb-2"
-          />
-          &nbsp;Google review
+          <a
+            href="https://www.google.com/search?q=pratham+milan&rlz=1C1ONGR_enIN966IN966&oq=prath&aqs=chrome.1.69i60j69i59l3j69i57j69i60l3.3686j0j7&sourceid=chrome&ie=UTF-8#lrd=0x39f881f1d54fd791:0x756e72c2053132d0,1,,,"
+            target="_blank"
+            aria-label="Google"
+            rel="noreferrer"
+          >
+            <img
+              src="/google.png"
+              width="18"
+              height="auto"
+              alt="Google"
+              className="pb-2"
+            />
+            &nbsp;Google review
+          </a>
         </small>
       </Container>
     </section>

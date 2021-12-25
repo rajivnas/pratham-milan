@@ -54,7 +54,7 @@ export default function Cars() {
               <hr />
 
               <Row>
-                <Col xs={8}>
+                <Col xs={9}>
                   <p className="fs-5">Specification</p>
 
                   <Row>
@@ -69,8 +69,8 @@ export default function Cars() {
                     })}
                   </Row>
                 </Col>
-                <Col xs={4}>
-                  <h1 className="fs-3">₹ {car.node.price}/-</h1>
+                <Col xs={3}>
+                  <h1 className="fs-3">{car.node.price}/-</h1>
                 </Col>
               </Row>
             </Col>
